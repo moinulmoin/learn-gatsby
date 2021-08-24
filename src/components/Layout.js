@@ -6,7 +6,10 @@ const Layout = ({ pageName, children }) => {
 		<>
 			<title>{pageName} - LandPa</title>
 			<Header />
-			{children}
+			<main>
+				<h1 className='text-center mb-10 mt-4'>This is {pageName}</h1>
+				{children}
+			</main>
 		</>
 	);
 };
